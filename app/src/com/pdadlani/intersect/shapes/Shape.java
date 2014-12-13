@@ -2,12 +2,13 @@ package com.pdadlani.intersect.shapes;
 
 public abstract class Shape {
 	
-	public Shape() {
-		// constructor
+	public abstract double getArea();
+	
+	public abstract double getPerimeter();
+	
+	@Override
+	public String toString() {
+		return "<Shape>";
 	}
-	
-	public abstract int getNumSides();
-
-	
 	
 }
